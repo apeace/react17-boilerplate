@@ -1,0 +1,10 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin largerThan($width) {
+    @media (min-width: $width+0.1px) {
+        @content;
+    }
+}

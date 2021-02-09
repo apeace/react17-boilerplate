@@ -1,0 +1,4 @@
+.junk/
+.idea/
+dist/
+node_modules/

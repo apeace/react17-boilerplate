@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "jsx": "react",
+        "lib": ["dom", "es2015", "es2018.promise"],
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es6",
+        "typeRoots": ["./node_modules/@types", "./typings"]
+    }
+}

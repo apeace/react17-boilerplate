@@ -1,0 +1,11 @@
+@import "src/lib/scss/colors";
+
+.Hello {
+    &_outer {
+        width: 100%;
+        text-align: center;
+        h1 {
+            color: $danger;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/**
+
+Contains global styles, like links and buttons.
+
+This is not the place to put re-usable things like color variables
+and mixins. Those should go in lib/scss/.
+
+**/
+a,
+a:hover,
+a:visited {
+    color: black;
+    text-decoration: underline;
+}
