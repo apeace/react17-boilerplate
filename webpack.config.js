@@ -46,15 +46,22 @@ module.exports = (env, argv) => {
     // Use ts-loader for Typescript.
     // Aside from compiling Typescript into Javascript, it will also compile
     // JSX syntax into Javascript calls.
-    config.module.rules.push({
+    const tsLoader = {
         test: /\.ts(x?)$/,
         exclude: /node_modules/,
         use: [
             {
                 loader: "ts-loader",
+                options: {}
             },
         ],
-    })
+    }
+    if (isProd) {
+        tsLoader.use[0].options.compilerOptions = {
+            jsx: "react-jsx"
+        }
+    }
+    config.module.rules.push(tsLoader)
 
     // Use style-loader and css-loader for CSS.
     config.module.rules.push({

@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": "./src",
-        "jsx": "react",
+        "jsx": "react-jsxdev",
         "lib": ["dom", "es2015", "es2018.promise"],
         "module": "commonjs",
         "noImplicitAny": true,

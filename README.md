@@ -59,16 +59,6 @@ Build commands such as `make run` and `make build` will use the version of Types
 NPM, residing in your `node_modules` folder. You don't need to have Typescript or the `tsc` command
 installed globally, just Node and NPM.
 
-### You must import React
-
-Any time you use JSX, you must `import * as React from "react"`. This is because the Typescript
-compiler transforms JSX into `React` calls. And yet, unless you import React, it will assume that
-you've made a mistake by writing JSX. If you forget to do this, you'll see the error message:
-
-```
-TS2686: 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
-```
-
 ### Why not use `styled-components`?
 
 I prefer to use SASS because it offers mixins. I also prefer to define things like color variables

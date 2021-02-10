@@ -1,5 +1,3 @@
-import * as React from "react"
-
 import fib from "../../lib/ts/fib"
 
 import partyparrot from "../../assets/images/partyparrot.gif"
