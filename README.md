@@ -167,7 +167,6 @@ switch to the [official version](https://github.com/rstacruz/jsdom-global) it sh
 
 ## TODO
 
--   Font importing
--   Heroku config?
--   Server-side rendering?
--   Warning about relative path to node_modules in tsconfig
+-   Font importing.
+-   Warning about relative path to node_modules in tsconfig.
+-   Upgrade to Webpack 5, waiting on [this](https://github.com/sysgears/mochapack/pull/83).
